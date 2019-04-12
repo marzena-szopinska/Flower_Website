@@ -338,4 +338,52 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bg-large.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  color: white;
+}
+
+.navigation-bar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+footer {
+  color: white;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+}
+
+i {
+  font-size: 4rem;
+}
+
 /*# sourceMappingURL=main.css.map */

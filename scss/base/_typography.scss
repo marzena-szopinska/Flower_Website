@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../images/bg-large.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
