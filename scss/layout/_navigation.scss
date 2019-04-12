@@ -5,4 +5,17 @@
 
 #nav-links {
   display: none;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+
+#nav-links li a {
+  padding: 1rem;
+  display: block;
+}
+
+#nav-links li:hover {
+  background-color: rgba(255, 255, 255, .1);
 }
