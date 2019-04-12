@@ -346,6 +346,8 @@ template {
 
 body {
   font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
   font-family: "Lato", sans-serif;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bg-large.jpg") no-repeat center;
@@ -369,9 +371,18 @@ header {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+#nav-links {
+  display: none;
+}
+
 .container {
   width: 100%;
   padding: 1rem;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
@@ -383,6 +394,7 @@ footer {
 }
 
 i {
+  color: white;
   font-size: 4rem;
 }
 

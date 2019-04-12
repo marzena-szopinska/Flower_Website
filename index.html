@@ -12,13 +12,12 @@
     <header>
       <div class="navigation-bar">
         <div class="container">
-          <div class="logo">
-            <i class="fab fa-medium"></i>
-          </div>
           <nav>
-            <label for="toggle"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id='toggle'>
-            <ul>
+            <div class="nav-icons">
+              <a href="" ><i class="fab fa-medium"></i></a> <!-- LOGO -->
+              <a href="javascript:void(0);" class='hamburger-icon' onclick='toggleMenu()'><i class="fas fa-bars"></i></a> <!-- HAMBURGER -->
+            </div>
+            <ul id='nav-links'> <!-- LINKS -->
               <li><a href=''></a>Home</li>
               <li><a href=''></a>About</li>
               <li><a href=''></a>Projects</li>
@@ -47,5 +46,16 @@
         </div>
       </div>
     </footer>
+    <script>
+      const links = document.getElementById('nav-links');
+      function toggleMenu() {
+        if(links.style.display === 'block'){
+          links.style.display = 'none';
+        } else {
+          links.style.display = 'block';
+        }
+      }
+
+    </script>
   </body>
 </html>
