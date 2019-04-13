@@ -15,13 +15,14 @@ header {
     h1 {
       @include space-outside($top: 0, $bottom: 8px);
       font-weight: $thin-font;
-      animation: scale 2s ease-out;
+      animation: scale 1s ease;
       animation-delay: 2.2s;
-      backface-visibility: hidden;
     }
 
     h3 {
       font-weight: $thin-font;
+      animation: scale 1s ease;
+      animation-delay: 3.2s;
     }
   }
 

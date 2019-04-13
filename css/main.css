@@ -426,12 +426,13 @@ header .main-text h1 {
   margin-top: 0;
   margin-bottom: 8px;
   font-weight: 300;
-  animation: scale 2s ease-out;
+  animation: scale 1s ease;
   animation-delay: 2.2s;
-  backface-visibility: hidden;
 }
 header .main-text h3 {
   font-weight: 300;
+  animation: scale 1s ease;
+  animation-delay: 3.2s;
 }
 
 .navigation-bar {
