@@ -5,14 +5,10 @@
 }
 
 .nav-icons {
-  display: flex;
-  justify-content: space-between;
+  @include flexy($just: space-between);
 }
 
 .main-text {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexy($dir: column, $just:center, $align:center);
 }

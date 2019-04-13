@@ -393,12 +393,12 @@ header .main-text {
   top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 325px;
-  height: auto;
   border-top: 10px double;
   border-bottom: 10px double;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  width: 325px;
+  height: auto;
 }
 header .main-text h1 {
   margin-top: 0;
@@ -467,8 +467,8 @@ footer p {
 }
 footer .social-links a {
   display: inline-block;
-  padding-bottom: 0.65rem;
   padding-right: 0.45rem;
+  padding-bottom: 0.65rem;
   padding-left: 0.45rem;
 }
 

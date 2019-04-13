@@ -4,7 +4,7 @@ footer {
   background-color: rgba(0, 0, 0, .6);
   position: absolute;
   bottom: 0;
-  box-shadow: 5px 5px 25px $color-white;
+  @include white-shadow;
   text-align: center;
 
   p {
@@ -15,9 +15,7 @@ footer {
 
     a {
       display: inline-block;
-      padding-bottom: 0.65rem;
-      padding-right: 0.45rem;
-      padding-left: 0.45rem;
+      @include space-inside($right: 0.45rem, $bottom: 0.65rem, $left: 0.45rem);
     }
 
   }

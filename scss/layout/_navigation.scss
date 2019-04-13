@@ -1,11 +1,7 @@
 .navigation-bar {
   background-color: rgba(0, 0, 0, .7);
-  box-shadow: 5px 5px 25px $color-white;
-  // animating the height
-  max-height: 95px;
-  overflow:hidden;
-  transition: max-height 1s ease-out;
-  height:auto;
+  @include white-shadow;
+  @include height-anim(95px);
 
   #nav-links {
     display: none;
@@ -25,5 +21,6 @@
 
 .streatch {
   // stretaching the navigation bar
+  // needed for height-anim
   max-height: 600px;
 }

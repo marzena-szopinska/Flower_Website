@@ -1,0 +1,45 @@
+@mixin flexy($dir:null, $just:null, $align:null, $wrap:null) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin center-box {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin double-border{
+  border-top: 10px double;
+  border-bottom: 10px double;
+}
+
+@mixin space-inside($top:null, $right:null, $bottom:null, $left:null) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+@mixin space-outside($top:null, $right:null, $bottom:null, $left:null) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+@mixin white-shadow {
+  box-shadow: 5px 5px 25px $color-white;
+}
+
+@mixin height-anim($maxHeight) {
+  // animating the height
+  max-height: $maxHeight;
+  overflow:hidden;
+  transition: max-height 1s ease-out;
+  height:auto;
+}
