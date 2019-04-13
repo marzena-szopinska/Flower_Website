@@ -1,5 +1,11 @@
 // COLORS
 $color-white: #fff;
-
+$linkedin: #0077b5;
+$twitter: #1c9deb;
+$facebook: #395795;
+// Darker COLORS
+$linkedin-dark: darken($linkedin, 20%);
+$twitter-dark: darken($twitter, 20%);
+$facebook-dark: darken($facebook, 20%);
 // FONTS
 $thin-font: 300;

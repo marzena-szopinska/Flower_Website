@@ -506,5 +506,24 @@ i {
 footer i {
   font-size: 1.75rem;
 }
+footer .fa-linkedin {
+  color: #0077b5;
+  transition: color 0.4s ease-out;
+}
+footer .fa-linkedin:hover {
+  color: #00344f;
+}
+footer .fa-twitter-square {
+  color: #1c9deb;
+}
+footer .fa-twitter-square:hover {
+  color: #0d6194;
+}
+footer .fa-facebook {
+  color: #395795;
+}
+footer .fa-facebook:hover {
+  color: #1d2c4b;
+}
 
 /*# sourceMappingURL=main.css.map */

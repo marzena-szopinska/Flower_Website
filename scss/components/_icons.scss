@@ -3,8 +3,31 @@ i {
   font-size: 2rem;
 }
 
+
 footer {
   i {
     font-size: 1.75rem;
+  }
+
+  .fa-linkedin {
+    color: $linkedin;
+    transition: color .4s ease-out;
+    &:hover {
+      color: $linkedin-dark;
+    }
+  }
+
+  .fa-twitter-square {
+    color: $twitter;
+    &:hover {
+      color: $twitter-dark;
+    }
+  }
+
+  .fa-facebook {
+    color: $facebook;
+    &:hover {
+      color: $facebook-dark;
+    }
   }
 }
