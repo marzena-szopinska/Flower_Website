@@ -7,11 +7,12 @@ i {
 footer {
   i {
     font-size: 1.75rem;
+    transition: color .4s ease-out;
   }
 
   .fa-linkedin {
     color: $linkedin;
-    transition: color .4s ease-out;
+
     &:hover {
       color: $linkedin-dark;
     }

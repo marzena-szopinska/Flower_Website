@@ -505,10 +505,10 @@ i {
 
 footer i {
   font-size: 1.75rem;
+  transition: color 0.4s ease-out;
 }
 footer .fa-linkedin {
   color: #0077b5;
-  transition: color 0.4s ease-out;
 }
 footer .fa-linkedin:hover {
   color: #00344f;
