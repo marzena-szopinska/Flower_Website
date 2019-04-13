@@ -1,3 +1,23 @@
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-110px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-110px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* PLACE FOR VENDORS */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -352,7 +372,6 @@ body {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bg-large.jpg") no-repeat center;
   background-size: cover;
-  position: relative;
 }
 
 a {
@@ -373,6 +392,10 @@ header .main-text {
 
 .navigation-bar {
   background-color: rgba(0, 0, 0, 0.7);
+  max-height: 95px;
+  overflow: hidden;
+  transition: max-height 2s ease-out;
+  height: auto;
 }
 .navigation-bar #nav-links {
   display: none;
@@ -388,6 +411,10 @@ header .main-text {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.streatch {
+  max-height: 600px;
+}
+
 .container {
   width: 100%;
   padding: 1rem;
@@ -396,6 +423,14 @@ header .main-text {
 .nav-icons {
   display: flex;
   justify-content: space-between;
+}
+
+.main-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
