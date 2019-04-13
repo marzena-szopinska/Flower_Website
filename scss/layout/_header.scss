@@ -8,10 +8,16 @@ header {
     @include space-inside($top: .75rem, $bottom: .75rem);
     width: 325px;
     height: auto;
-
+    animation: fadeIn 2s ease-out;
+    animation-delay: .65s;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
     h1 {
       @include space-outside($top: 0, $bottom: 8px);
       font-weight: $thin-font;
+      animation: scale 2s ease-out;
+      animation-delay: 2.2s;
+      backface-visibility: hidden;
     }
 
     h3 {

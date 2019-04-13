@@ -1,21 +1,39 @@
-@-webkit-keyframes fadeInDown {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-110px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
   }
 }
-@keyframes fadeInDown {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(-110px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+  }
+}
+@-webkit-keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /* PLACE FOR VENDORS */
@@ -399,11 +417,18 @@ header .main-text {
   padding-bottom: 0.75rem;
   width: 325px;
   height: auto;
+  animation: fadeIn 2s ease-out;
+  animation-delay: 0.65s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
 }
 header .main-text h1 {
   margin-top: 0;
   margin-bottom: 8px;
   font-weight: 300;
+  animation: scale 2s ease-out;
+  animation-delay: 2.2s;
+  backface-visibility: hidden;
 }
 header .main-text h3 {
   font-weight: 300;
