@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Portfolio Website</title>
   </head>
-  <body>
+  <body id='main-body'>
     <header id='home'>
       <div class="navigation-bar">
         <div class="container">
@@ -31,9 +31,6 @@
         <h3>Front-End Developer</h3>
       </div>
     </header>
-    <div id='dynamic-content'>
-      
-    </div>
     <footer>
       <div class="container">
         <div class="footer">
@@ -49,19 +46,6 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      const links = document.getElementById('nav-links');
-      const navBar = document.querySelector('.navigation-bar');
-
-      function toggleMenu() {
-        if(links.style.display === 'block'){
-          navBar.classList.remove('streatch');
-          links.style.display = 'none';
-        } else {
-          navBar.classList.add('streatch');
-          links.style.display = 'block';
-        }
-    }
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

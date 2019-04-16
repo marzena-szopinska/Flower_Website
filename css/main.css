@@ -388,8 +388,6 @@ body {
   letter-spacing: 1px;
   font-family: "Lato", sans-serif;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/bg-large.jpg") no-repeat center;
-  background-size: cover;
 }
 
 a {
@@ -399,6 +397,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+img {
+  width: 100%;
 }
 
 header {
@@ -461,13 +463,12 @@ header .main-text h3 {
   max-height: 600px;
 }
 
-#dynamic-content {
-  color: white;
-  margin-top: 145px;
-}
-
-.dynamic-page {
-  width: 80%;
+.page {
+  background-color: #fdf7ff;
+  width: 90%;
+  border-radius: 20px;
+  margin: 50px auto;
+  padding: 1rem;
 }
 
 .container {
@@ -533,6 +534,19 @@ footer .fa-facebook {
 }
 footer .fa-facebook:hover {
   color: #1d2c4b;
+}
+
+#main-body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/bg-large.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.about-footer {
+  position: relative;
+}
+
+.image-wrapper {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
