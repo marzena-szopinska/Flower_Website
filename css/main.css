@@ -415,7 +415,7 @@ header .main-text {
   border-bottom: 10px double;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  width: 325px;
+  width: 80%;
   height: auto;
   animation: fadeIn 2s ease-out;
   animation-delay: 0.65s;
@@ -459,6 +459,15 @@ header .main-text h3 {
 
 .streatch {
   max-height: 600px;
+}
+
+#dynamic-content {
+  color: white;
+  margin-top: 145px;
+}
+
+.dynamic-page {
+  width: 80%;
 }
 
 .container {

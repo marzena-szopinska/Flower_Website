@@ -9,7 +9,7 @@
     <title>Portfolio Website</title>
   </head>
   <body>
-    <header>
+    <header id='home'>
       <div class="navigation-bar">
         <div class="container">
           <nav>
@@ -18,26 +18,29 @@
               <a href="javascript:void(0);" class='hamburger-icon' onclick='toggleMenu()'><i class="fas fa-bars"></i></a> <!-- HAMBURGER -->
             </div>
             <ul id='nav-links'> <!-- LINKS -->
-              <li><a href='#'>Home</a></li>
-              <li><a href='#'>About</a></li>
-              <li><a href='#'>Projects</a></li>
-              <li><a href='#'>Contact</a></li>
+              <li><a href='#home'>Home</a></li>
+              <li><a href='about.html'>About</a></li>
+              <li><a href='projects.html'>Projects</a></li>
+              <li><a href='contact.html'>Contact</a></li>
             </ul>
           </nav>
       </div>
     </div>
-      <div class="main-text">
+      <div class="main-text" style='display:none'>
         <h1><span class="first-letter">M</span>arzena Szopinska</h1>
         <h3>Front-End Developer</h3>
       </div>
     </header>
+    <div id='dynamic-content'>
+      
+    </div>
     <footer>
       <div class="container">
         <div class="footer">
           <div class="social-links">
-            <a href=''><i class="fab fa-linkedin"></i></a>
-            <a href=''><i class="fab fa-twitter-square"></i></a>
-            <a href=''><i class="fab fa-facebook"></i></a>
+            <a href='#'><i class="fab fa-linkedin"></i></a>
+            <a href='#'><i class="fab fa-twitter-square"></i></a>
+            <a href='#'><i class="fab fa-facebook"></i></a>
           </div>
           <div>
             <p><span class="copy-symbol">&copy;</span> Proudly created by Marzena Szopinska, Poland</p>
@@ -45,6 +48,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       const links = document.getElementById('nav-links');
       const navBar = document.querySelector('.navigation-bar');
@@ -58,7 +62,6 @@
           links.style.display = 'block';
         }
     }
-
     </script>
   </body>
 </html>

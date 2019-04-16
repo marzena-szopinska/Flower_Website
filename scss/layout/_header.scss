@@ -6,7 +6,7 @@ header {
     @include center-box;
     @include double-border;
     @include space-inside($top: .75rem, $bottom: .75rem);
-    width: 325px;
+    width: 80%;
     height: auto;
     animation: fadeIn 2s ease-out;
     animation-delay: .65s;
