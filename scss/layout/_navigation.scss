@@ -1,6 +1,6 @@
 .navigation-bar {
   background-color: rgba(0, 0, 0, .7);
-  @include white-shadow;
+  @include shadow($color-white);
   @include height-anim(95px);
 
   #nav-links {

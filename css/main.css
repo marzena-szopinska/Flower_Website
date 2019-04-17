@@ -466,9 +466,12 @@ header .main-text h3 {
 .page {
   background-color: #fdf7ff;
   width: 90%;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 50px auto;
   padding: 1rem;
+  animation: fadeIn 0.7s ease-out;
+  backface-visibility: hidden;
+  box-shadow: 5px 5px 25px black;
 }
 
 .container {
@@ -546,7 +549,27 @@ footer .fa-facebook:hover {
 }
 
 .image-wrapper {
+  width: 100%;
   margin-top: 20px;
+}
+
+figure {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  /* darken the image */
+  background-color: #000;
+}
+
+figure img {
+  transform: scale(1.15);
+  opacity: 0.7;
+  transition: transform 0.5s ease, opacity 0.5s;
+}
+
+figure img:hover {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .projects-wrapper a {
