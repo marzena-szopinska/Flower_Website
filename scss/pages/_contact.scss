@@ -1,3 +1,43 @@
 .contact-footer {
   position: absolute;
 }
+
+.contact {
+  position: relative;
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    display: block;
+  }
+
+  input, textarea {
+    width: 100%;
+    margin: 5px 0;
+    border: 0;
+  }
+
+  textarea {
+    height: 80px;
+  }
+
+  input[placeholder], textarea[placeholder] {
+    font-style: italic;
+    font-size: .75rem;
+  }
+
+  button {
+    position: absolute;
+    bottom: -21px;
+    right: -13px;
+    color: $color-white;
+    border: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: .5rem 1rem;
+    background-color: $color-purple;
+  }
+
+}

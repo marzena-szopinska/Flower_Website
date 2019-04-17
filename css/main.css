@@ -587,4 +587,38 @@ em {
   position: absolute;
 }
 
+.contact {
+  position: relative;
+}
+.contact form {
+  margin-top: 20px;
+}
+.contact label {
+  display: block;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  margin: 5px 0;
+  border: 0;
+}
+.contact textarea {
+  height: 80px;
+}
+.contact input[placeholder], .contact textarea[placeholder] {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+.contact button {
+  position: absolute;
+  bottom: -21px;
+  right: -13px;
+  color: #fff;
+  border: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+  background-color: #B01FDE;
+}
+
 /*# sourceMappingURL=main.css.map */
