@@ -1,7 +1,6 @@
-.contact-footer {
-  position: absolute;
+.contact-footer{
+  position: relative;
 }
-
 .contact {
   position: relative;
   form {
@@ -10,6 +9,7 @@
 
   label {
     display: block;
+    margin-bottom: 2px;
   }
 
   input, textarea {
@@ -40,4 +40,15 @@
     background-color: $color-purple;
   }
 
+  .contact-info {
+    p {
+      padding-top: .8rem;
+      font-style: italic;
+    }
+
+    p:nth-child(3) {
+      font-weight: 900;
+      color: $color-purple;
+    }
+  }
 }

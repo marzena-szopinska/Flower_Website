@@ -584,7 +584,7 @@ em {
 }
 
 .contact-footer {
-  position: absolute;
+  position: relative;
 }
 
 .contact {
@@ -595,6 +595,7 @@ em {
 }
 .contact label {
   display: block;
+  margin-bottom: 2px;
 }
 .contact input, .contact textarea {
   width: 100%;
@@ -619,6 +620,14 @@ em {
   border-radius: 50%;
   padding: 0.5rem 1rem;
   background-color: #B01FDE;
+}
+.contact .contact-info p {
+  padding-top: 0.8rem;
+  font-style: italic;
+}
+.contact .contact-info p:nth-child(3) {
+  font-weight: 900;
+  color: #B01FDE;
 }
 
 /*# sourceMappingURL=main.css.map */
