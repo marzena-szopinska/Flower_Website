@@ -1,5 +1,6 @@
 .page {
   background-color: #fdf7ff;
+  opacity: 0.9;
   width: 90%;
   border-radius: 10px;
   margin: 50px auto;
@@ -7,4 +8,8 @@
   animation: fadeIn .7s ease-out;
   backface-visibility: hidden;
   @include shadow(black);
+  .about-me-info:first-letter {
+    font-size: 1.4rem;
+    color: $color-purple;
+  }
 }
