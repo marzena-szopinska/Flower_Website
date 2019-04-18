@@ -8,8 +8,4 @@
   animation: fadeIn .7s ease-out;
   backface-visibility: hidden;
   @include shadow(black);
-  .about-me-info:first-letter {
-    font-size: 1.4rem;
-    color: $color-purple;
-  }
 }

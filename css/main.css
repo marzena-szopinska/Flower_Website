@@ -413,8 +413,8 @@ header .main-text {
   top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-top: 10px double;
-  border-bottom: 10px double;
+  border-top: 8px double;
+  border-bottom: 8px double;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   width: 80%;
@@ -473,10 +473,6 @@ header .main-text h3 {
   animation: fadeIn 0.7s ease-out;
   backface-visibility: hidden;
   box-shadow: 5px 5px 25px black;
-}
-.page .about-me-info:first-letter {
-  font-size: 1.4rem;
-  color: #B01FDE;
 }
 
 .container {
@@ -579,8 +575,32 @@ em {
   color: #B01FDE;
 }
 
-.projects-wrapper a {
-  color: #999;
+.projects-wrapper {
+  margin-top: 20px;
+}
+.projects-wrapper figure {
+  position: relative;
+}
+.projects-wrapper figure figcaption {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #dfa4f2;
+}
+.projects-wrapper figure figcaption .btn {
+  margin: 0 auto;
+  color: gray;
+  width: 40%;
+  background-color: #fff;
+  border-radius: 5px;
+  display: block;
+  border: 1px solid white;
+  margin-top: 20px;
+  padding: 0.45rem;
 }
 
 .contact-footer {
@@ -604,6 +624,7 @@ em {
 }
 .contact textarea {
   height: 80px;
+  background-color: #E9E9E9;
 }
 .contact input[placeholder], .contact textarea[placeholder] {
   font-style: italic;

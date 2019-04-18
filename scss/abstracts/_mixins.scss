@@ -14,8 +14,8 @@
 }
 
 @mixin double-border{
-  border-top: 10px double;
-  border-bottom: 10px double;
+  border-top: 8px double;
+  border-bottom: 8px double;
 }
 
 @mixin space-inside($top:null, $right:null, $bottom:null, $left:null) {
