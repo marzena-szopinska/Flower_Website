@@ -5,26 +5,28 @@
 .image-wrapper {
   width: 100%;
   margin-top: 20px;
+
+  figure {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    /* darken the image */
+    background-color: #000;
+
+    img {
+      transform: scale(1.15);
+      opacity: 0.7;
+      transition: transform .5s ease, opacity .5s;
+    }
+
+    img:hover {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 }
 
-figure {
-  width: 100%;
-  margin-bottom: 20px;
-  overflow: hidden;
-  /* darken the image */
-  background-color: #000;
-  
-  img {
-    transform: scale(1.15);
-    opacity: 0.7;
-    transition: transform .5s ease, opacity .5s;
-  }
 
-  img:hover {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 em {
   color: $color-purple;

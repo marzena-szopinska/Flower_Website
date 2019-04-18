@@ -4,6 +4,12 @@
 
   figure {
     position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    img {
+      cursor: pointer;
+    }
     figcaption {
       text-align: center;
       padding: 1rem;
