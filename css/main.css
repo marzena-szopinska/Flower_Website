@@ -486,7 +486,7 @@ header .main-text h3 {
   }
 }
 .body-wrapper {
-  min-height: calc(100vh - 85px);
+  min-height: calc(100vh - 115px);
 }
 
 .page {
@@ -635,6 +635,11 @@ footer .fa-facebook:hover {
   width: 100%;
   height: 100%;
   background-color: #dfa4f2;
+  /* center the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.6s ease-out;
   /* hide the image overlay */
   transform: translateX(-100%);
@@ -664,12 +669,6 @@ footer .fa-facebook:hover {
   .projects-wrapper figure {
     width: 49%;
   }
-  .projects-wrapper figure figcaption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 .contact {
   position: relative;
@@ -677,24 +676,24 @@ footer .fa-facebook:hover {
 .contact form {
   margin-top: 20px;
 }
-.contact label {
+.contact form label {
   display: block;
   margin-bottom: 2px;
 }
-.contact input, .contact textarea {
+.contact form input, .contact form textarea {
   width: 100%;
   margin: 5px 0;
   border: 0;
 }
-.contact textarea {
+.contact form textarea {
   height: 80px;
   background-color: #E9E9E9;
 }
-.contact input[placeholder], .contact textarea[placeholder] {
+.contact form input[placeholder], .contact form textarea[placeholder] {
   font-style: italic;
   font-size: 0.75rem;
 }
-.contact button {
+.contact form button {
   position: absolute;
   bottom: -21px;
   right: -13px;
@@ -706,8 +705,9 @@ footer .fa-facebook:hover {
   padding: 0.5rem 1rem;
   background-color: #B01FDE;
   transition: transform 0.4s ease-out;
+  box-shadow: 5px 5px 25px black;
 }
-.contact button:hover {
+.contact form button:hover {
   transform: rotate(25deg);
 }
 .contact .contact-info p {
@@ -717,6 +717,16 @@ footer .fa-facebook:hover {
 .contact .contact-info p:nth-child(3) {
   font-weight: 900;
   color: #B01FDE;
+}
+
+@media (min-width: 768px) {
+  .contact form input {
+    height: 40px;
+  }
+  .contact form button {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
