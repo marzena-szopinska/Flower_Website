@@ -566,7 +566,7 @@ footer .fa-facebook:hover {
   transition: transform 0.5s ease, opacity 0.5s;
 }
 .image-wrapper figure img:hover {
-  transform: scale(1);
+  transform: scale(1.05);
   opacity: 1;
 }
 
