@@ -11,6 +11,7 @@
       cursor: pointer;
     }
     figcaption {
+      opacity: 0.9;
       text-align: center;
       padding: 1rem;
       color: $color-white;
@@ -42,4 +43,15 @@
     transform: translateX(0);
   }
 
+}
+
+@media (min-width: 768px) {
+  .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    figure {
+      width: 49%;
+    }
+  }
 }

@@ -626,6 +626,7 @@ footer .fa-facebook:hover {
   cursor: pointer;
 }
 .projects-wrapper figure figcaption {
+  opacity: 0.9;
   text-align: center;
   padding: 1rem;
   color: #fff;
@@ -654,6 +655,16 @@ footer .fa-facebook:hover {
   transform: translateX(0);
 }
 
+@media (min-width: 768px) {
+  .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .projects-wrapper figure {
+    width: 49%;
+  }
+}
 .contact {
   position: relative;
 }
