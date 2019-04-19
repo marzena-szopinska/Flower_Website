@@ -52,6 +52,13 @@
     justify-content: space-between;
     figure {
       width: 49%;
+
+      figcaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
