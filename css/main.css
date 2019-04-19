@@ -653,6 +653,10 @@ em {
   border-radius: 50%;
   padding: 0.5rem 1rem;
   background-color: #B01FDE;
+  transition: transform 0.4s ease-out;
+}
+.contact button:hover {
+  transform: rotate(25deg);
 }
 .contact .contact-info p {
   padding-top: 0.8rem;
