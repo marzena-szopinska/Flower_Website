@@ -25,3 +25,19 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    figure {
+      width: 49%;
+
+    }
+  }
+
+  .about-footer {
+    position: absolute;
+  }
+}

@@ -1,6 +1,5 @@
 .page {
   background-color: #fdf7ff;
-  opacity: 0.9;
   width: 90%;
   border-radius: 10px;
   margin: 50px auto;
@@ -8,4 +7,11 @@
   animation: fadeIn .7s ease-out;
   backface-visibility: hidden;
   @include shadow(black);
+}
+
+
+@media (min-width: 768px) {
+  .page {
+    font-size: 1.2rem;
+  }
 }
