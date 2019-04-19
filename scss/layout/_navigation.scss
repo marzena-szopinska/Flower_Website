@@ -24,3 +24,18 @@
   // needed for height-anim
   max-height: 600px;
 }
+
+
+@media (min-width: 768px) {
+    .navigation-bar {
+      #nav-links {
+      font-size: 1.25rem;
+    }
+
+    .nav-icons {
+      i{
+        font-size: 2.75rem;
+      }
+    }
+  }
+}

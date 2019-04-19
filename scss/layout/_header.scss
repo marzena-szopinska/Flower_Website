@@ -25,5 +25,16 @@ header {
       animation-delay: 3.2s;
     }
   }
+}
 
+@media (min-width: 768px) {
+    header {
+      font-size: 1.45rem;
+
+      .main-text {
+        width: 67%;
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+      }
+    }
 }

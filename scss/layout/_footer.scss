@@ -19,3 +19,17 @@ footer {
     }
   }
 }
+
+@media (min-width: 768px) {
+  footer {
+    p {
+      font-size: 1.25rem;
+    }
+
+    .social-links {
+      i {
+        font-size: 2.75rem;
+      }
+    }
+  }
+}
