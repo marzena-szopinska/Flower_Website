@@ -716,6 +716,15 @@ footer .fa-facebook:hover {
     width: 49%;
   }
 }
+@media (min-width: 1024px) {
+  .projects-wrapper figure {
+    width: 32%;
+  }
+  .projects-wrapper figure:last-of-type {
+    margin-right: auto;
+    margin-left: 2%;
+  }
+}
 .projects-wrapper figure:hover figcaption {
   /* put the text on its original position */
   transform: translateX(0);
