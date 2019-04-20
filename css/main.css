@@ -539,6 +539,7 @@ header .main-text h3 {
 @media (min-width: 1024px) {
   .page {
     font-size: 1rem;
+    width: 80%;
   }
 }
 
@@ -747,12 +748,17 @@ footer .fa-facebook:hover {
   display: block;
   margin-bottom: 2px;
 }
+.contact form input {
+  height: 40px;
+}
 .contact form input, .contact form textarea {
   width: 100%;
   margin: 5px 0;
   border: 0;
+  padding-left: 0.5rem;
 }
 .contact form textarea {
+  padding-top: 0.25rem;
   height: 80px;
   background-color: #E9E9E9;
 }
@@ -783,11 +789,6 @@ footer .fa-facebook:hover {
     height: 100px;
   }
 }
-@media (min-width: 768px) {
-  .contact form input {
-    height: 40px;
-  }
-}
 .contact .contact-info p {
   padding-top: 0.8rem;
   font-style: italic;
@@ -795,6 +796,11 @@ footer .fa-facebook:hover {
 .contact .contact-info p:nth-child(3) {
   font-weight: 900;
   color: #B01FDE;
+}
+@media (min-width: 1024px) {
+  .contact {
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

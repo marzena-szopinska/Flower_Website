@@ -10,18 +10,25 @@
       margin-bottom: 2px;
     }
 
+    input {
+      height: 40px;
+    }
+
     input, textarea {
       width: 100%;
       margin: 5px 0;
       border: 0;
+      padding-left: .5rem;
     }
 
     textarea {
+      padding-top: .25rem;
       height: 80px;
       background-color: #E9E9E9;
     }
 
     input[placeholder], textarea[placeholder] {
+
       font-style: italic;
       font-size: .75rem;
     }
@@ -48,12 +55,6 @@
           height: 100px;
         }
       }
-
-      input {
-        @include mq(m){
-          height: 40px;
-        }
-      }
     }
 
   .contact-info {
@@ -66,5 +67,9 @@
       font-weight: 900;
       color: $color-purple;
     }
+  }
+
+  @include mq(l) {
+    width: 40%;
   }
 }
