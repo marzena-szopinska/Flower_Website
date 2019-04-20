@@ -43,3 +43,17 @@
   transition: max-height 1s ease-out;
   height:auto;
 }
+
+// MEDIA QUERIES
+@mixin mq($break) {
+  @if $break == 'm' {
+    @media (min-width: $break-m){
+      @content;
+    }
+  }
+  @else if  $break == 'l' {
+    @media (min-width: $break-l){
+      @content;
+    }
+  }
+}
