@@ -20,17 +20,15 @@
       transform: scale(1.05);
       opacity: 1;
     }
-  }
-}
 
-@media (min-width: 768px) {
-  .image-wrapper {
+    @include mq(m){
+      width: 49%;
+    }
+  }
+
+  @include mq(m) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    figure {
-      width: 49%;
-
-    }
   }
 }

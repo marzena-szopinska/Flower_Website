@@ -7,9 +7,11 @@
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden;
+
     img {
       cursor: pointer;
     }
+
     figcaption {
       opacity: 0.9;
       text-align: center;
@@ -41,6 +43,10 @@
         padding: .45rem;
       }
     }
+    
+    @include mq(m){
+      width: 49%;
+    }
   }
 
   figure:hover figcaption {
@@ -48,15 +54,9 @@
     transform: translateX(0);
   }
 
-}
-
-@media (min-width: 768px) {
-  .projects-wrapper {
+  @include mq(m){
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    figure {
-      width: 49%;
-    }
   }
 }

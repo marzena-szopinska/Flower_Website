@@ -39,14 +39,22 @@
       background-color: $color-purple;
       transition: transform .4s ease-out;
       @include shadow(black);
+        &:hover {
+          transform: rotate(25deg);
+        }
 
-      &:hover {
-        transform: rotate(25deg);
+        @include mq(m){
+          width: 100px;
+          height: 100px;
+        }
       }
-  }
 
-
-  }
+      input {
+        @include mq(m){
+          height: 40px;
+        }
+      }
+    }
 
   .contact-info {
     p {
@@ -58,21 +66,5 @@
       font-weight: 900;
       color: $color-purple;
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .contact {
-  form {
-    input {
-      height: 40px;
-    }
-
-    button {
-      width: 100px;
-      height: 100px;
-    }
-  }
-
   }
 }

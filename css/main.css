@@ -440,17 +440,19 @@ header .main-text h3 {
   animation: scale 1s ease;
   animation-delay: 3.2s;
 }
-
 @media (min-width: 768px) {
-  header {
-    font-size: 1.45rem;
-  }
   header .main-text {
     width: 67%;
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
   }
 }
+@media (min-width: 768px) {
+  header {
+    font-size: 1.45rem;
+  }
+}
+
 .navigation-bar {
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 5px 5px 25px #fff;
@@ -472,19 +474,21 @@ header .main-text h3 {
 .navigation-bar #nav-links li:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+@media (min-width: 768px) {
+  .navigation-bar #nav-links {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .navigation-bar .nav-icons i {
+    font-size: 2.75rem;
+  }
+}
 
 .streatch {
   max-height: 600px;
 }
 
-@media (min-width: 768px) {
-  .navigation-bar #nav-links {
-    font-size: 1.25rem;
-  }
-  .navigation-bar .nav-icons i {
-    font-size: 2.75rem;
-  }
-}
 .body-wrapper {
   min-height: calc(100vh - 115px);
 }
@@ -499,12 +503,12 @@ header .main-text h3 {
   backface-visibility: hidden;
   box-shadow: 5px 5px 25px black;
 }
-
 @media (min-width: 768px) {
   .page {
     font-size: 1.2rem;
   }
 }
+
 .container {
   width: 100%;
   padding: 1rem;
@@ -534,21 +538,23 @@ footer {
 footer p {
   font-size: 0.75rem;
 }
+@media (min-width: 768px) {
+  footer p {
+    font-size: 1.25rem;
+  }
+}
 footer .social-links a {
   display: inline-block;
   padding-right: 0.45rem;
   padding-bottom: 0.65rem;
   padding-left: 0.45rem;
 }
-
 @media (min-width: 768px) {
-  footer p {
-    font-size: 1.25rem;
-  }
   footer .social-links i {
     font-size: 2.75rem;
   }
 }
+
 i {
   color: white;
   font-size: 2rem;
@@ -602,17 +608,19 @@ footer .fa-facebook:hover {
   transform: scale(1.05);
   opacity: 1;
 }
-
+@media (min-width: 768px) {
+  .image-wrapper figure {
+    width: 49%;
+  }
+}
 @media (min-width: 768px) {
   .image-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .image-wrapper figure {
-    width: 49%;
-  }
 }
+
 .projects-wrapper {
   margin-top: 20px;
 }
@@ -655,21 +663,23 @@ footer .fa-facebook:hover {
   margin-top: 20px;
   padding: 0.45rem;
 }
+@media (min-width: 768px) {
+  .projects-wrapper figure {
+    width: 49%;
+  }
+}
 .projects-wrapper figure:hover figcaption {
   /* put the text on its original position */
   transform: translateX(0);
 }
-
 @media (min-width: 768px) {
   .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .projects-wrapper figure {
-    width: 49%;
-  }
 }
+
 .contact {
   position: relative;
 }
@@ -710,6 +720,17 @@ footer .fa-facebook:hover {
 .contact form button:hover {
   transform: rotate(25deg);
 }
+@media (min-width: 768px) {
+  .contact form button {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .contact form input {
+    height: 40px;
+  }
+}
 .contact .contact-info p {
   padding-top: 0.8rem;
   font-style: italic;
@@ -717,16 +738,6 @@ footer .fa-facebook:hover {
 .contact .contact-info p:nth-child(3) {
   font-weight: 900;
   color: #B01FDE;
-}
-
-@media (min-width: 768px) {
-  .contact form input {
-    height: 40px;
-  }
-  .contact form button {
-    width: 100px;
-    height: 100px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

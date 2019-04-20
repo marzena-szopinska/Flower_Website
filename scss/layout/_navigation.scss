@@ -16,6 +16,18 @@
     li:hover {
       background-color: rgba(255, 255, 255, .1);
     }
+
+    @include mq(m) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .nav-icons {
+    i {
+      @include mq(m) {
+        font-size: 2.75rem;
+      }
+    }
   }
 }
 
@@ -23,19 +35,4 @@
   // stretaching the navigation bar
   // needed for height-anim
   max-height: 600px;
-}
-
-
-@media (min-width: 768px) {
-    .navigation-bar {
-      #nav-links {
-      font-size: 1.25rem;
-    }
-
-    .nav-icons {
-      i{
-        font-size: 2.75rem;
-      }
-    }
-  }
 }
