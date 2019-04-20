@@ -20,6 +20,11 @@
     @include mq(m) {
       font-size: 1.25rem;
     }
+
+    @include mq(l){
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   .nav-icons {
@@ -27,6 +32,19 @@
       @include mq(m) {
         font-size: 2.75rem;
       }
+    }
+
+    @include mq(l){
+      .hamburger-icon{
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    @include mq(l) {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
