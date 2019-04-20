@@ -515,6 +515,11 @@ header .main-text h3 {
 .body-wrapper {
   min-height: calc(100vh - 115px);
 }
+@media (min-width: 1024px) {
+  .body-wrapper {
+    min-height: calc(100vh - 105px);
+  }
+}
 
 .page {
   background-color: #fdf7ff;
@@ -558,12 +563,22 @@ footer {
   box-shadow: 5px 5px 25px #fff;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  footer {
+    height: 105px;
+  }
+}
 footer p {
   font-size: 0.75rem;
 }
 @media (min-width: 768px) {
   footer p {
     font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  footer p {
+    font-size: 0.75rem;
   }
 }
 footer .social-links a {

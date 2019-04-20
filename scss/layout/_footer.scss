@@ -5,11 +5,17 @@ footer {
   background-color: rgba(0, 0, 0, .6);
   @include shadow($color-white);
   text-align: center;
-
+  @include mq(l){
+    height: 105px;
+  }
   p {
     font-size: .75rem;
     @include mq(m){
       font-size: 1.25rem;
+    }
+
+    @include mq(l){
+      font-size: .75rem;
     }
   }
 
@@ -25,4 +31,5 @@ footer {
       }
     }
   }
+
 }
