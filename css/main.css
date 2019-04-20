@@ -447,6 +447,11 @@ header .main-text h3 {
     padding-bottom: 1.75rem;
   }
 }
+@media (min-width: 1024px) {
+  header .main-text {
+    width: 35%;
+  }
+}
 @media (min-width: 768px) {
   header {
     font-size: 1.45rem;
@@ -483,6 +488,7 @@ header .main-text h3 {
   .navigation-bar #nav-links {
     display: flex;
     justify-content: flex-end;
+    font-size: 1rem;
   }
 }
 @media (min-width: 768px) {
