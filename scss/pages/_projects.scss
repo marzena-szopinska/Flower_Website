@@ -13,15 +13,15 @@
     }
 
     figcaption {
-      opacity: 0.9;
+      opacity: 0.95;
       text-align: center;
+      color: black;
       padding: 1rem;
-      color: $color-white;
       position: absolute;
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: $light-purple;
+      background-color: $cream-color;
       /* center the content */
       display: flex;
       flex-direction: column;

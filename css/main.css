@@ -683,15 +683,15 @@ footer .fa-facebook:hover {
   cursor: pointer;
 }
 .projects-wrapper figure figcaption {
-  opacity: 0.9;
+  opacity: 0.95;
   text-align: center;
+  color: black;
   padding: 1rem;
-  color: #fff;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #dfa4f2;
+  background-color: #eee1c7;
   /* center the content */
   display: flex;
   flex-direction: column;
