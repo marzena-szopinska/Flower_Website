@@ -531,6 +531,10 @@ header .main-text h3 {
   backface-visibility: hidden;
   box-shadow: 5px 5px 25px black;
 }
+.page h2 {
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
 @media (min-width: 768px) {
   .page {
     font-size: 1.2rem;
