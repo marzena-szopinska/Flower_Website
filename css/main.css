@@ -562,6 +562,11 @@ header .main-text h3 {
   padding-top: 1rem;
   animation: fadeInLeft 2s ease;
 }
+.page .title-name {
+  animation: fadeInLeft 2s ease;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
 @media (min-width: 768px) {
   .page {
     font-size: 1.2rem;
