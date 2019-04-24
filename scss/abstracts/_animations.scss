@@ -67,3 +67,25 @@
         transform: scale(1);
      }
   }
+
+  @-webkit-keyframes skew {
+      0% {
+        opacity: 0;
+         transform: skewX(55deg);
+      }
+      100% {
+        opacity: 1;
+         transform: skewX(0);
+      }
+   }
+
+   @keyframes skew {
+     0% {
+       opacity: 0;
+        transform: skewX(55deg);
+     }
+     100% {
+       opacity: 1;
+        transform: skewX(0);
+     }
+   }

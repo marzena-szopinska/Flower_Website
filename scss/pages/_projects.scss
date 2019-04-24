@@ -59,6 +59,12 @@
   figure:hover figcaption {
     /* put the text on its original position */
     transform: translateX(0);
+
+    .btn {
+      animation: skew 1s ease;
+      animation-delay: 1s;
+      animation-fill-mode: backwards;
+    }
   }
 
   @include mq(m){

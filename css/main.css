@@ -62,6 +62,26 @@
     transform: scale(1);
   }
 }
+@-webkit-keyframes skew {
+  0% {
+    opacity: 0;
+    transform: skewX(55deg);
+  }
+  100% {
+    opacity: 1;
+    transform: skewX(0);
+  }
+}
+@keyframes skew {
+  0% {
+    opacity: 0;
+    transform: skewX(55deg);
+  }
+  100% {
+    opacity: 1;
+    transform: skewX(0);
+  }
+}
 /* PLACE FOR VENDORS */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -765,6 +785,11 @@ footer .fa-facebook:hover {
 .projects-wrapper figure:hover figcaption {
   /* put the text on its original position */
   transform: translateX(0);
+}
+.projects-wrapper figure:hover figcaption .btn {
+  animation: skew 1s ease;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 @media (min-width: 768px) {
   .projects-wrapper {
