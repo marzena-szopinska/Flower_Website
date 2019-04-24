@@ -17,10 +17,10 @@
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(130px);
   }
   80% {
-    transform: translateX(-2%);
+    transform: translateX(-5px);
   }
   100% {
     opacity: 1;
@@ -30,10 +30,10 @@
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(130px);
   }
   80% {
-    transform: translateX(-2%);
+    transform: translateX(-5px);
   }
   100% {
     opacity: 1;
