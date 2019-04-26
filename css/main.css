@@ -792,7 +792,7 @@ footer .fa-facebook:hover {
 }
 .projects-wrapper figure:hover figcaption .btn {
   animation: skew 1s ease;
-  animation-delay: 1s;
+  animation-delay: 0.7s;
   animation-fill-mode: backwards;
 }
 @media (min-width: 768px) {
