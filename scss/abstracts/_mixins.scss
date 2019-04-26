@@ -40,7 +40,7 @@
   // animating the height
   max-height: $maxHeight;
   overflow:hidden;
-  transition: max-height 1s ease-out;
+  transition: max-height 1s ease;
   height:auto;
 }
 

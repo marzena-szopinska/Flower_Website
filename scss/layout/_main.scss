@@ -9,22 +9,19 @@
 .page {
   h2 {
     text-transform: uppercase;
-    padding-top: 1rem;
-    animation: fadeInLeft 2s ease;
+    @include space-inside($top: 1rem);
+    @include setAnimation($name: fadeInLeft, $duration: 2s);
   }
 
   .title-name {
-    animation: fadeInLeft 2s ease;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
+    @include setAnimation($name: fadeInLeft, $duration: 2s, $delay: 1s, $fillMode: backwards);
   }
   background-color: #fdf7ff;
   width: 90%;
   border-radius: 10px;
-  margin: 50px auto;
-  padding: 1rem;
-  animation: fadeIn .7s ease-out;
-  backface-visibility: hidden;
+  @include space-outside($top: 50px, $right: auto, $bottom: 50px, $left: auto);
+  @include space-inside($top: 1rem, $right: 1rem, $bottom: 1rem, $left: 1rem);
+  @include setAnimation($name: fadeIn, $duration: .7s);
   @include shadow(black);
   @include mq(m) {
     font-size: 1.2rem;
