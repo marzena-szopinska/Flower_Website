@@ -47,13 +47,6 @@
     @include mq(m){
       width: 49%;
     }
-    @include mq(l){
-      width: 32%;
-      &:last-of-type {
-        margin-right: auto;
-        margin-left: 2%;
-      }
-    }
   }
 
   figure:hover figcaption {

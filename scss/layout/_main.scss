@@ -24,6 +24,7 @@
   @include setAnimation($name: fadeIn, $duration: .7s);
   @include shadow(black);
   @include mq(m) {
+    @include space-inside($right: 2rem, $left: 2rem);
     font-size: 1.2rem;
   }
   @include mq(l){

@@ -25,10 +25,6 @@
     @include mq(m){
       width: 49%;
     }
-
-    @include mq(l){
-      width: 32%;
-    }
   }
 
   @include mq(m) {

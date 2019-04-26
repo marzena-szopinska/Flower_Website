@@ -605,6 +605,8 @@ header .main-text h3 {
 }
 @media (min-width: 768px) {
   .page {
+    padding-right: 2rem;
+    padding-left: 2rem;
     font-size: 1.2rem;
   }
 }
@@ -729,11 +731,6 @@ footer .fa-facebook:hover {
     width: 49%;
   }
 }
-@media (min-width: 1024px) {
-  .image-wrapper figure {
-    width: 32%;
-  }
-}
 @media (min-width: 768px) {
   .image-wrapper {
     display: flex;
@@ -787,15 +784,6 @@ footer .fa-facebook:hover {
 @media (min-width: 768px) {
   .projects-wrapper figure {
     width: 49%;
-  }
-}
-@media (min-width: 1024px) {
-  .projects-wrapper figure {
-    width: 32%;
-  }
-  .projects-wrapper figure:last-of-type {
-    margin-right: auto;
-    margin-left: 2%;
   }
 }
 .projects-wrapper figure:hover figcaption {
