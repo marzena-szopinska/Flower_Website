@@ -44,6 +44,13 @@
   height:auto;
 }
 
+@mixin setAnimation($name, $duration, $delay:null, $fillMode:null) {
+  animation: $name $duration ease-out;
+  animation-delay: $delay;
+  animation-fill-mode: $fillMode;
+  backface-visibility: hidden;
+}
+
 // MEDIA QUERIES
 @mixin mq($break) {
   @if $break == 'm' {

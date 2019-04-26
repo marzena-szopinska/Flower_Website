@@ -8,27 +8,21 @@ header {
     @include space-inside($top: .75rem, $bottom: .75rem);
     width: 80%;
     height: auto;
-    animation: fadeIn 2s ease-out;
-    animation-delay: .65s;
-    animation-fill-mode: backwards;
-    backface-visibility: hidden;
+    @include setAnimation($name: fadeIn, $duration: 2s, $delay: .65s, $fillMode: backwards);
     h1 {
       @include space-outside($top: 0, $bottom: 8px);
       font-weight: $thin-font;
-      animation: scale 1s ease;
-      animation-delay: 2.2s;
+      @include setAnimation($name: scale, $duration: 1s, $delay: 2.2s);
     }
 
     h3 {
       font-weight: $thin-font;
-      animation: scale 1s ease;
-      animation-delay: 3.2s;
+      @include setAnimation($name: scale, $duration: 1s, $delay: 3.2s);
     }
 
     @include mq(m){
       width: 67%;
-      padding-top: 1.75rem;
-      padding-bottom: 1.75rem;
+      @include space-inside($top: 1.75rem, $bottom: 1.75rem);
     }
 
     @include mq(l){
