@@ -554,6 +554,9 @@ header .main-text h3 {
   .navigation-bar .nav-icons .hamburger-icon {
     display: none;
   }
+  .navigation-bar .nav-icons .fa-medium {
+    padding-left: 1rem;
+  }
 }
 @media (min-width: 1024px) {
   .navigation-bar nav {
