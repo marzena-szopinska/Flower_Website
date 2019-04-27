@@ -734,8 +734,8 @@ footer .fa-facebook:hover {
 @media (min-width: 768px) {
   .image-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -818,7 +818,10 @@ footer .fa-facebook:hover {
 }
 .contact form input, .contact form textarea {
   width: 100%;
-  margin: 5px 0;
+  margin-top: 5px;
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-left: 0;
   border: 0;
   padding-left: 0.5rem;
 }
@@ -840,7 +843,10 @@ footer .fa-facebook:hover {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  padding: 0.5rem 1rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
   background-color: #B01FDE;
   transition: transform 0.4s ease-out;
   box-shadow: 5px 5px 25px black;

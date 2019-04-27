@@ -3,11 +3,11 @@
   position: relative;
 
   form {
-    margin-top: 20px;
+    @include space-outside($top: 20px);
 
     label {
       display: block;
-      margin-bottom: 2px;
+      @include space-outside($bottom: 2px);
     }
 
     input {
@@ -16,19 +16,18 @@
 
     input, textarea {
       width: 100%;
-      margin: 5px 0;
+      @include space-outside($top: 5px, $right: 0, $bottom: 5px, $left: 0);
       border: 0;
-      padding-left: .5rem;
+      @include space-inside($left: .5rem);
     }
 
     textarea {
-      padding-top: .25rem;
+      @include space-inside($top: .25rem);
       height: 80px;
       background-color: #E9E9E9;
     }
 
     input[placeholder], textarea[placeholder] {
-
       font-style: italic;
       font-size: .75rem;
     }
@@ -42,7 +41,7 @@
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      padding: .5rem 1rem;
+      @include space-inside($top: .5rem, $right: 1rem, $bottom: .5rem, $left: 1rem);
       background-color: $color-purple;
       transition: transform .4s ease-out;
       @include shadow(black);
@@ -59,7 +58,7 @@
 
   .contact-info {
     p {
-      padding-top: .8rem;
+      @include space-inside($top: .8rem);
       font-style: italic;
     }
 
