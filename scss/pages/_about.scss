@@ -2,11 +2,11 @@
 
 .image-wrapper {
   width: 100%;
-  margin-top: 20px;
+  @include space-outside($top: 20px);
 
   figure {
     width: 100%;
-    margin-bottom: 20px;
+    @include space-outside($bottom: 20px);
     overflow: hidden;
     /* darken the image */
     background-color: #000;
@@ -28,8 +28,6 @@
   }
 
   @include mq(m) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include flexy($wrap: wrap, $just: space-between);
   }
 }
