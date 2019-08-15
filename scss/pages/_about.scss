@@ -1,5 +1,6 @@
-
-
+.page {
+  margin-top: 9rem;
+}
 .image-wrapper {
   width: 100%;
   @include space-outside($top: 20px);

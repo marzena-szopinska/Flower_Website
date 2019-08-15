@@ -1,0 +1,15 @@
+.btn {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: inline-block;
+  font-size: .9rem;
+  border: 1px solid black;
+  color: $color-pink;
+  font-style: italic;
+  transition: all .3s ease-out;
+
+  &:hover {
+    background-color: $color-pink;
+    color: black;
+  }
+}
