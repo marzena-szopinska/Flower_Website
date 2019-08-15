@@ -512,61 +512,58 @@ header .main-text h3 {
   }
 }
 
-.navigation-bar {
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 5px 5px 25px #fff;
-  max-height: 95px;
-  overflow: hidden;
-  transition: max-height 1s ease;
-  height: auto;
-}
-.navigation-bar #nav-links {
+.navigation__checkbox {
   display: none;
+}
+.navigation__btn {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #afa0a4;
+  border-radius: 50%;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2000;
+  transition: background-color 0.2s ease-out;
+}
+.navigation__background {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1.1rem;
+  right: 1.1rem;
+  z-index: 1500;
+  background-image: radial-gradient(#afa0a4, #fff);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.navigation nav {
+  opacity: 0;
+  width: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1800;
+  transition: all 0.2s ease;
+}
+.navigation nav .navigation__list {
+  list-style: none;
   text-align: center;
   text-transform: uppercase;
-  font-size: 0.75rem;
 }
-.navigation-bar #nav-links li a {
-  padding: 1rem;
-  display: block;
+.navigation nav .navigation__list li {
+  padding: 1.5rem;
 }
-.navigation-bar #nav-links li:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(50);
 }
-@media (min-width: 768px) {
-  .navigation-bar #nav-links {
-    font-size: 1.25rem;
-  }
+.navigation__checkbox:checked + .navigation__btn {
+  background-color: #fff;
 }
-@media (min-width: 1024px) {
-  .navigation-bar #nav-links {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 768px) {
-  .navigation-bar .nav-icons i {
-    font-size: 2.75rem;
-  }
-}
-@media (min-width: 1024px) {
-  .navigation-bar .nav-icons .hamburger-icon {
-    display: none;
-  }
-  .navigation-bar .nav-icons .fa-medium {
-    padding-left: 1rem;
-  }
-}
-@media (min-width: 1024px) {
-  .navigation-bar nav {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.streatch {
-  max-height: 600px;
+.navigation__checkbox:checked ~ nav {
+  opacity: 1;
+  width: 60%;
 }
 
 .body-wrapper {
