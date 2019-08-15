@@ -91,7 +91,7 @@
     top: 1rem;
     right: 1rem;
     z-index: 2000;
-    transition: background-color .2s ease-out;
+    transition: border .2s ease-out;
   }
 
   &__background {
@@ -129,17 +129,18 @@
       text-transform: uppercase;
 
       li {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
 
         a {
           transition: all .2s ease-out;
           display: block;
+          color: black;
         }
 
         a:hover {
-          color: black;
+          color: $color-white;
           letter-spacing: 5px;
           transform: scale(1.2);
         }
@@ -187,7 +188,7 @@
   }
 
   &__checkbox:checked + &__btn {
-    background-color: $color-white;
+    border: 1px solid black;
   }
 
   &__checkbox:checked ~ nav {
