@@ -630,9 +630,9 @@ header .main-text h3 {
 .body-wrapper {
   min-height: calc(100vh - 100px);
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .body-wrapper {
-    min-height: calc(100vh - 105px);
+    min-height: calc(100vh - 115px);
   }
 }
 
@@ -702,9 +702,9 @@ footer {
   background-color: #ead3d9;
   text-align: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   footer {
-    height: 105px;
+    height: 115px;
   }
 }
 footer p {

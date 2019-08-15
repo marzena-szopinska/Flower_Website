@@ -1,13 +1,13 @@
 .body-wrapper {
   min-height: calc(100vh - 100px);
 
-  @include mq(l){
-    min-height: calc(100vh - 105px);
+  @include mq(m){
+    min-height: calc(100vh - 115px);
   }
 }
 
 .page {
-  
+
   h2 {
     text-transform: uppercase;
     @include space-inside($top: 1rem);
