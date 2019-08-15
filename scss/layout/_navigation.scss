@@ -67,6 +67,16 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .navigation {
+  .flower {
+    width: 140px;
+    height: 140px;
+    position: fixed;
+    top: -.8rem;
+    right: -.95rem;
+    z-index: 1600;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+  }
 
   &__checkbox {
     display: none;
@@ -107,21 +117,74 @@
     transform: translate(-50%, -50%);
     z-index: 1800;
     transition: all .2s ease;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .navigation__list {
+      width: 50%;
       list-style: none;
       text-align: center;
       text-transform: uppercase;
 
       li {
-        padding: 1.5rem;
+        font-size: 1.4rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        a {
+          transition: all .2s ease-out;
+          display: block;
+        }
+
+        a:hover {
+          color: black;
+          letter-spacing: 5px;
+          transform: scale(1.2);
+        }
       }
+    }
+  }
+
+  &__icon {
+
+    position: relative;
+    margin-top: 2.2rem;
+    margin-left: 1.2rem;
+
+
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 2px;
+      background-color: black;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+
+    }
+
+    &::before {
+      top: -.6rem;
+    }
+
+    &::after {
+      top: .6rem;
     }
   }
 
   &__checkbox:checked ~  &__background {
     transform: scale(50);
+  }
+
+  &__checkbox:checked ~  .flower {
+    opacity: 1;
   }
 
   &__checkbox:checked + &__btn {
@@ -130,7 +193,7 @@
 
   &__checkbox:checked ~ nav {
     opacity: 1;
-    width: 60%;
+    width: 100%;
   }
 
 }
