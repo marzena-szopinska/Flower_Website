@@ -148,12 +148,9 @@
   }
 
   &__icon {
-
     position: relative;
     margin-top: 2.2rem;
     margin-left: 1.2rem;
-
-
     &,
     &::before,
     &::after {
@@ -167,7 +164,9 @@
     &::after {
       content: '';
       position: absolute;
-
+      left: 0;
+      // animate lines
+      transition: all .2s;
     }
 
     &::before {
@@ -180,10 +179,10 @@
   }
 
   &__checkbox:checked ~  &__background {
-    transform: scale(50);
+    transform: scale(60);
   }
 
-  &__checkbox:checked ~  .flower {
+  &__checkbox:checked ~ .flower {
     opacity: 1;
   }
 
@@ -194,6 +193,20 @@
   &__checkbox:checked ~ nav {
     opacity: 1;
     width: 100%;
+  }
+
+  &__checkbox:checked + &__btn &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__btn &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__btn &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 
 }
