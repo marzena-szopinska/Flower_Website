@@ -462,6 +462,7 @@ img {
 header .main-text {
   color: #fff;
   text-transform: uppercase;
+  font-size: 1.1rem;
   text-align: center;
   position: absolute;
   top: 51%;
@@ -469,7 +470,7 @@ header .main-text {
   transform: translate(-50%, -50%);
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  width: 80%;
+  width: 100%;
   height: auto;
   animation: fadeIn 2s ease-out;
   animation-delay: 0.65s;
@@ -546,7 +547,7 @@ header .main-text h3 {
 .navigation nav {
   opacity: 0;
   width: 0;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

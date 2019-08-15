@@ -2,11 +2,12 @@ header {
   .main-text {
     color: $color-white;
     text-transform: uppercase;
+    font-size: 1.1rem;
     text-align: center;
     @include center-box;
     // @include double-border;
     @include space-inside($top: .75rem, $bottom: .75rem);
-    width: 80%;
+    width: 100%;
     height: auto;
     @include setAnimation($name: fadeIn, $duration: 2s, $delay: .65s, $fillMode: backwards);
     h1 {
