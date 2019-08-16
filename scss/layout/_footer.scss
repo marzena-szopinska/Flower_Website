@@ -1,14 +1,10 @@
 footer {
 
   width: 100%;
-  height: 85px;
+  height: 100px;
   background-color: $color-pink;
   text-align: center;
   @include shadow(black);
-
-  @include mq(m){
-    height: 100px;
-  }
 
   @include mq(l){
     height: 105px;

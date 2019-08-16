@@ -1,9 +1,5 @@
 .body-wrapper {
-  min-height: calc(100vh - 85px);
-
-  @include mq(m){
-    min-height: calc(100vh - 100px);
-  }
+  min-height: calc(100vh - 100px);
 
   @include mq(l){
     min-height: calc(100vh - 105px);
@@ -32,6 +28,7 @@
   @include space-inside($top: 1rem, $right: 1rem, $bottom: 1rem, $left: 1rem);
   @include setAnimation($name: fadeIn, $duration: .7s);
   @include shadow(black);
+
   @include mq(m) {
     @include space-inside($right: 2rem, $left: 2rem);
     font-size: 1.2rem;
@@ -40,6 +37,7 @@
   @include mq(l){
     font-size: 1.2rem;
     width: 75%;
+    @include space-outside($bottom: 140px);
   }
 
   @include mq(xl){
