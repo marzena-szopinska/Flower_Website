@@ -22,12 +22,13 @@ header {
     }
 
     @include mq(m){
-      width: 67%;
+      width: 90%;
       @include space-inside($top: 1.75rem, $bottom: 1.75rem);
+      font-size: 2rem;
     }
 
     @include mq(l){
-      width: 35%;
+      font-size: 2.7rem;
     }
   }
 

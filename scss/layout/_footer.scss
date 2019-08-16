@@ -1,22 +1,26 @@
 footer {
 
   width: 100%;
-  height: 100px;
+  height: 85px;
   background-color: $color-pink;
   text-align: center;
 
   @include mq(m){
+    height: 100px;
+  }
+
+  @include mq(l){
     height: 115px;
   }
 
   p {
     font-size: .75rem;
     @include mq(m){
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
 
     @include mq(l){
-      font-size: .75rem;
+      // font-size: 1.4rem;
     }
   }
 

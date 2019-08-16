@@ -9,6 +9,13 @@
     z-index: 1600;
     opacity: 0;
     transition: opacity .2s ease-out;
+
+    @include mq(l){
+      width: 220px;
+      height: 220px;
+      top: -1.8rem;
+      right: -1.95rem;
+    }
   }
 
   &__checkbox {
@@ -25,6 +32,13 @@
     right: 1rem;
     z-index: 2000;
     transition: border .2s ease-out;
+
+    @include mq(l){
+      width: 6.5rem;
+      height: 6.5rem;
+      top: 2rem;
+      right: 2rem;
+    }
   }
 
   &__background {
@@ -38,6 +52,13 @@
     // set background
     background-image: radial-gradient($color-pink, $color-white);
     transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    @include mq(l){
+      width: 6rem;
+      height: 6rem;
+      top: 2.1rem;
+      right: 2.1rem;
+    }
   }
 
   nav {
@@ -77,6 +98,12 @@
           letter-spacing: 5px;
           transform: scale(1.2);
         }
+
+        @include mq(l){
+          font-size: 1.9rem;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
       }
     }
   }
@@ -110,6 +137,12 @@
     &::after {
       top: .6rem;
     }
+
+    @include mq(l){
+      margin-top: 3.2rem;
+      margin-left: 2.2rem;
+    }
+
   }
 
   &__checkbox:checked ~  &__background {
