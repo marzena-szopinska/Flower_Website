@@ -630,9 +630,9 @@ header .main-text h3 {
 }
 @media (min-width: 1024px) {
   .navigation nav .navigation__list li {
-    font-size: 1.9rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
   }
 }
 @media (min-width: 2560px) {
@@ -768,7 +768,7 @@ header .main-text h3 {
 }
 @media (min-width: 1024px) {
   .page {
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 75%;
   }
 }
@@ -987,6 +987,10 @@ footer .fa-facebook:hover {
   transition: transform 0.6s ease-out;
   /* hide the image overlay */
   transform: translateX(-100%);
+}
+.projects-wrapper figure figcaption h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 .projects-wrapper figure figcaption .btn {
   margin-top: 20px;

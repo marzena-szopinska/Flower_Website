@@ -4,8 +4,9 @@
   @include mq(xl) {
     margin-top: 14rem;
   }
-
 }
+
+
 .image-wrapper {
   width: 100%;
   @include space-outside($top: 20px);
@@ -36,4 +37,5 @@
   @include mq(m) {
     @include flexy($wrap: wrap, $just: space-between);
   }
+
 }

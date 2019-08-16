@@ -121,9 +121,9 @@
         }
 
         @include mq(l){
-          font-size: 1.9rem;
-          padding-top: 2rem;
-          padding-bottom: 2rem;
+          font-size: 1.5rem;
+          padding-top: 1.6rem;
+          padding-bottom: 1.6rem;
         }
 
         @include mq(xl){
