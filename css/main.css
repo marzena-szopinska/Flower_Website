@@ -550,6 +550,9 @@ header .main-text h3 {
   transition: border 0.2s ease-out;
   box-shadow: 5px 5px 25px black;
 }
+.navigation__btn:hover {
+  cursor: pointer;
+}
 @media (min-width: 1024px) {
   .navigation__btn {
     width: 5.5rem;
@@ -915,9 +918,19 @@ footer .fa-facebook:hover {
 .page {
   margin-top: 9rem;
 }
+@media (min-width: 768px) {
+  .page {
+    margin-top: 12rem;
+  }
+}
+@media (min-width: 1024px) {
+  .page {
+    margin-top: 16rem;
+  }
+}
 @media (min-width: 2560px) {
   .page {
-    margin-top: 14rem;
+    margin-top: 18rem;
   }
 }
 
@@ -1117,6 +1130,9 @@ footer .fa-facebook:hover {
     right: -34px;
   }
 }
+.contact .contact-info {
+  text-align: center;
+}
 .contact .contact-info p {
   padding-top: 0.8rem;
   font-style: italic;
@@ -1127,7 +1143,12 @@ footer .fa-facebook:hover {
 }
 @media (min-width: 1024px) {
   .contact {
-    width: 40%;
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .contact:nth-of-type(2) {
+    width: 50%;
   }
 }
 

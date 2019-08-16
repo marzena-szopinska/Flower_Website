@@ -1,8 +1,16 @@
 .page {
   margin-top: 9rem;
 
+  @include mq(m) {
+    margin-top: 12rem;
+  }
+
+  @include mq(l) {
+    margin-top: 16rem;
+  }
+
   @include mq(xl) {
-    margin-top: 14rem;
+    margin-top: 18rem;
   }
 }
 

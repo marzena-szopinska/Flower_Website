@@ -40,6 +40,10 @@
     transition: border .2s ease-out;
     @include shadow(black);
 
+    &:hover {
+      cursor: pointer;
+    }
+
     @include mq(l){
       width: 5.5rem;
       height: 5.5rem;
