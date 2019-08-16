@@ -25,7 +25,7 @@
   .title-name {
     @include setAnimation($name: fadeInLeft, $duration: 2s, $delay: 1s, $fillMode: backwards);
   }
-  background-color: $color-pink;
+  background-color: rgba($color-pink, .9);
   width: 90%;
   border-radius: 10px;
   @include space-outside($top: 50px, $right: auto, $bottom: 50px, $left: auto);
@@ -38,6 +38,11 @@
   }
   @include mq(l){
     font-size: 1rem;
+    width: 75%;
+  }
+
+  @include mq(xl){
+    font-size: 2rem;
     width: 75%;
   }
 }

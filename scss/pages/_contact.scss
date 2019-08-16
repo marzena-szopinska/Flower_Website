@@ -8,10 +8,18 @@
     label {
       display: block;
       @include space-outside($bottom: 2px);
+      @include mq(xl){
+        margin-top: 2rem;
+      }
+
     }
 
     input {
       height: 40px;
+
+      @include mq(xl){
+        height: 60px;
+      }
     }
 
     input, textarea {
@@ -25,11 +33,20 @@
       @include space-inside($top: .25rem);
       height: 80px;
       background-color: #E9E9E9;
+
+      @include mq(xl){
+        height: 160px;
+      }
     }
 
     input[placeholder], textarea[placeholder] {
       font-style: italic;
       font-size: .75rem;
+
+      @include mq(xl){
+        font-size: 2rem;
+        padding: 1rem;
+      }
     }
 
     button {
@@ -50,8 +67,15 @@
         }
 
         @include mq(m){
-          width: 100px;
-          height: 100px;
+          width: 90px;
+          height: 90px;
+        }
+
+        @include mq(xl){
+          width: 140px;
+          height: 140px;
+          bottom: -35px;
+          right: -34px;
         }
       }
     }

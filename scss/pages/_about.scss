@@ -1,5 +1,10 @@
 .page {
   margin-top: 9rem;
+
+  @include mq(xl) {
+    margin-top: 14rem;
+  }
+
 }
 .image-wrapper {
   width: 100%;
