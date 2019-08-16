@@ -13,6 +13,17 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin set-sticky-item($top:null, $right:null, $bottom:null, $left:null, $width: null, $height: null) {
+  position: fixed;
+  height: $height;
+  width: $width;
+  
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
 @mixin double-border{
   border-top: 8px double;
   border-bottom: 8px double;
