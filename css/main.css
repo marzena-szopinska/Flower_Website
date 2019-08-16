@@ -499,9 +499,9 @@ header .main-text h3 {
     font-size: 2rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 2560px) {
   header .main-text {
-    font-size: 2.7rem;
+    font-size: 3.1rem;
   }
 }
 @media (min-width: 768px) {
@@ -528,6 +528,13 @@ header .main-text h3 {
     right: -1.95rem;
   }
 }
+@media (min-width: 2560px) {
+  .navigation .flower {
+    width: 260px;
+    height: 260px;
+    right: -2rem;
+  }
+}
 .navigation__checkbox {
   display: none;
 }
@@ -541,11 +548,20 @@ header .main-text h3 {
   right: 1rem;
   z-index: 2000;
   transition: border 0.2s ease-out;
+  box-shadow: 5px 5px 25px black;
 }
 @media (min-width: 1024px) {
   .navigation__btn {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+@media (min-width: 2560px) {
+  .navigation__btn {
+    width: 7.5rem;
+    height: 7.5rem;
     top: 2rem;
     right: 2rem;
   }
@@ -563,8 +579,16 @@ header .main-text h3 {
 }
 @media (min-width: 1024px) {
   .navigation__background {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
+    top: 2.1rem;
+    right: 2.1rem;
+  }
+}
+@media (min-width: 2560px) {
+  .navigation__background {
+    width: 7rem;
+    height: 7rem;
     top: 2.1rem;
     right: 2.1rem;
   }
@@ -611,6 +635,18 @@ header .main-text h3 {
     padding-bottom: 2rem;
   }
 }
+@media (min-width: 2560px) {
+  .navigation nav .navigation__list li {
+    font-size: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .navigation nav .navigation__list {
+    width: 20%;
+  }
+}
 .navigation__icon {
   position: relative;
   margin-top: 2.2rem;
@@ -636,12 +672,23 @@ header .main-text h3 {
 }
 @media (min-width: 1024px) {
   .navigation__icon {
-    margin-top: 3.2rem;
-    margin-left: 2.2rem;
+    margin-top: 2.7rem;
+    margin-left: 1.8rem;
+  }
+}
+@media (min-width: 2560px) {
+  .navigation__icon {
+    margin-top: 3.5rem;
+    margin-left: 2.6rem;
   }
 }
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(60);
+}
+@media (min-width: 2560px) {
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(100);
+  }
 }
 .navigation__checkbox:checked ~ .flower {
   opacity: 1;
@@ -675,7 +722,12 @@ header .main-text h3 {
 }
 @media (min-width: 1024px) {
   .body-wrapper {
-    min-height: calc(100vh - 115px);
+    min-height: calc(100vh - 105px);
+  }
+}
+@media (min-width: 2560px) {
+  .body-wrapper {
+    min-height: calc(100vh - 130px);
   }
 }
 
@@ -744,6 +796,7 @@ footer {
   height: 85px;
   background-color: #ead3d9;
   text-align: center;
+  box-shadow: 5px 5px 25px black;
 }
 @media (min-width: 768px) {
   footer {
@@ -752,7 +805,12 @@ footer {
 }
 @media (min-width: 1024px) {
   footer {
-    height: 115px;
+    height: 105px;
+  }
+}
+@media (min-width: 2560px) {
+  footer {
+    height: 130px;
   }
 }
 footer p {
@@ -763,6 +821,11 @@ footer p {
     font-size: 1rem;
   }
 }
+@media (min-width: 2560px) {
+  footer p {
+    font-size: 1.4rem;
+  }
+}
 footer .social-links a {
   display: inline-block;
   padding-right: 0.45rem;
@@ -771,7 +834,17 @@ footer .social-links a {
 }
 @media (min-width: 768px) {
   footer .social-links i {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  footer .social-links i {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 2560px) {
+  footer .social-links i {
+    font-size: 3.75rem;
   }
 }
 
@@ -829,7 +902,7 @@ footer .fa-facebook:hover {
 }
 
 #main-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/bg-large.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../images/bg-large.jpg") no-repeat center;
   background-size: cover;
 }
 

@@ -4,13 +4,18 @@ footer {
   height: 85px;
   background-color: $color-pink;
   text-align: center;
+  @include shadow(black);
 
   @include mq(m){
     height: 100px;
   }
 
   @include mq(l){
-    height: 115px;
+    height: 105px;
+  }
+
+  @include mq(xl){
+    height: 130px;
   }
 
   p {
@@ -19,9 +24,11 @@ footer {
       font-size: 1rem;
     }
 
-    @include mq(l){
-      // font-size: 1.4rem;
+    @include mq(xl){
+      font-size: 1.4rem;
     }
+
+
   }
 
   .social-links {
@@ -32,7 +39,15 @@ footer {
 
     i {
       @include mq(m){
-        font-size: 2.75rem;
+        font-size: 2.5rem;
+      }
+
+      @include mq(l){
+        font-size: 2.3rem;
+      }
+
+      @include mq(xl){
+        font-size: 3.75rem;
       }
     }
   }

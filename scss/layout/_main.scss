@@ -6,7 +6,11 @@
   }
 
   @include mq(l){
-    min-height: calc(100vh - 115px);
+    min-height: calc(100vh - 105px);
+  }
+
+  @include mq(xl){
+    min-height: calc(100vh - 130px);
   }
 }
 

@@ -27,8 +27,8 @@ header {
       font-size: 2rem;
     }
 
-    @include mq(l){
-      font-size: 2.7rem;
+    @include mq(xl){
+      font-size: 3.1rem;
     }
   }
 

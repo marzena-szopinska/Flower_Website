@@ -16,6 +16,12 @@
       top: -1.8rem;
       right: -1.95rem;
     }
+
+    @include mq(xl){
+      width: 260px;
+      height: 260px;
+      right: -2rem;
+    }
   }
 
   &__checkbox {
@@ -32,10 +38,18 @@
     right: 1rem;
     z-index: 2000;
     transition: border .2s ease-out;
+    @include shadow(black);
 
     @include mq(l){
-      width: 6.5rem;
-      height: 6.5rem;
+      width: 5.5rem;
+      height: 5.5rem;
+      top: 2rem;
+      right: 2rem;
+    }
+
+    @include mq(xl){
+      width: 7.5rem;
+      height: 7.5rem;
       top: 2rem;
       right: 2rem;
     }
@@ -54,8 +68,15 @@
     transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     @include mq(l){
-      width: 6rem;
-      height: 6rem;
+      width: 5rem;
+      height: 5rem;
+      top: 2.1rem;
+      right: 2.1rem;
+    }
+
+    @include mq(xl){
+      width: 7rem;
+      height: 7rem;
       top: 2.1rem;
       right: 2.1rem;
     }
@@ -104,7 +125,18 @@
           padding-top: 2rem;
           padding-bottom: 2rem;
         }
+
+        @include mq(xl){
+          font-size: 3rem;
+          padding-top: 2.5rem;
+          padding-bottom: 2.5rem;
+        }
       }
+
+      @include mq(m){
+        width: 20%;
+      }
+
     }
   }
 
@@ -139,14 +171,24 @@
     }
 
     @include mq(l){
-      margin-top: 3.2rem;
-      margin-left: 2.2rem;
+      margin-top: 2.7rem;
+      margin-left: 1.8rem;
+    }
+
+
+    @include mq(xl) {
+      margin-top: 3.5rem;
+      margin-left: 2.6rem;
     }
 
   }
 
   &__checkbox:checked ~  &__background {
     transform: scale(60);
+
+    @include mq(xl){
+      transform: scale(100);
+    }
   }
 
   &__checkbox:checked ~ .flower {
